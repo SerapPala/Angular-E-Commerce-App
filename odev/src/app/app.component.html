@@ -1,0 +1,28 @@
+<!--Start Topbar-->
+<app-topbar></app-topbar>
+<!--En Topbar-->
+
+<!--Start Navbar-->
+<app-navbar></app-navbar>
+<!--End Navbar-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+       <!--Start category-->
+      <app-category></app-category>
+       <!--End category-->
+    </div>
+    <div class="col-lg-9">
+    <!--Start outlet-->
+    <router-outlet></router-outlet>
+     <!--End outlet-->
+    </div>
+  </div>
+</div>
+
+<!--Start trendproduct-->
+<app-trend></app-trend>
+<!--End trendproduct-->
+
+<!--Start Footer-->
+<app-footer></app-footer>
