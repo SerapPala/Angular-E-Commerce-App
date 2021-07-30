@@ -1,0 +1,59 @@
+<!--DESKTOP CATEGORY SİDEBAR-->
+<div class="category py-3 pt-4">
+  <div class="row d-none d-lg-block sidebar my-5  ml-1">
+    <div class="list-group ">
+        <span class="list-group-item active border-0 rounded-left text-dark font-weight-500">
+           Kategoriler
+        </span>
+        <a class="list-group-item border-0" routerLink="/urunler">
+          <mat-icon>book</mat-icon>  Tüm Kitaplar
+        </a>
+        <a *ngFor="let category of categories" class="list-group-item border-0" routerLink="/urunler/kategori/{{category.id}}">
+          {{ category.categoryName }}
+        </a>
+        <a class="list-group-item  border-0" routerLink="urun-ekle">
+          <mat-icon>add_circle_outline</mat-icon>Ürün Ekle/Klasik Form
+        </a>
+        <a class="list-group-item  border-0" routerLink="urun-ekle-2">
+          <mat-icon>add_circle_outline</mat-icon>Ürün Ekle/Reactive F.
+        </a>
+    </div>
+  </div>
+  </div>
+<!--DESKTOP CATEGORY SİDEBAR-->
+
+<!--MOBİLE CATEGORY -->
+<ul class="nav d-xl-none">
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/urunler">Tüm Ürünler</a>
+  </li>
+  <li class="nav-item">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline" id="dropdownBasic1" ngbDropdownToggle>Kategoriler</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <li *ngFor="let category of categories" ><a
+          class="nav-link" routerLink="/urunler/kategori/{{category.id}}">
+          {{ category.categoryName }}
+         </a>
+        </li>
+      </div>
+    </div>
+  </li>
+  <li class="nav-item">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline" id="dropdownBasic1" ngbDropdownToggle>Kurumsal</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <li>
+          <a class="nav-link" routerLink="/hakkimizda">HAKKIMIZDA</a>
+          <a class="list-group-item  border-0" routerLink="urun-ekle">
+            <mat-icon>add_circle_outline</mat-icon>  Ürün Ekle/Klasik Form
+          </a>
+          <a class="list-group-item  border-0" routerLink="urun-ekle-2">
+            <mat-icon>add_circle_outline</mat-icon>  Ürün Ekle/Reactive Form
+          </a>
+        </li>
+      </div>
+    </div>
+  </li>
+</ul>
+

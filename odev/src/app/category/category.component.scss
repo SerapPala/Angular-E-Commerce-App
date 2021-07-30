@@ -1,0 +1,53 @@
+@import "../../sass/abstracts/responsive";
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/utilities/utilities";
+.category{
+  .sidebar{
+    margin-left:1rem;
+    .list-group{
+      &-item{
+        background-color: $white;
+        color:$black;
+        font-family: $PrimaryFont;
+        font-weight: 400;
+        font-size:1.2rem;
+        padding-left: 1rem;
+        cursor:pointer;
+        border-bottom:1px solid $black4 !important;
+        padding-top:7px;
+        &:hover{
+          background-color:$lightOrange ;
+          transition: $transition;
+        }
+      }
+    }
+    .mat-icon{
+      color:$orange;
+    }
+  }
+}
+.nav{
+  background-color: $lightOrange;
+  color:$black;
+
+    padding: 7px;
+    margin-bottom:2rem;
+  .nav-item{
+    li{
+      font-weight: 900;
+    font-size:17px;
+    text-shadow: 20cm;
+      color:$blue;
+    }
+    .nav-link{
+      font-weight: 500;
+    font-size:17px;
+    text-shadow: 20cm;
+      color:$blue;
+  &:active{
+    color:$green;
+  }
+    }
+  }
+}
