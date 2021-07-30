@@ -1,0 +1,27 @@
+
+
+// import base
+@import "./sass/base/base";
+// import abstracts
+@import "./sass/abstracts/responsive";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/mixins";
+// import utilities
+@import "./sass/utilities/utilities";
+// import components
+@import "./app/header/header.component.scss";
+//import metarial/angular css
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+@import  "~font-awesome/css/font-awesome.min.css" ;
+@import  "~alertifyjs/build/css/alertify.min.css";
+@import  "~alertifyjs/build/css/themes/bootstrap.min.css";
+
+
+//@import "~material-design-icons-iconfont/dist/material-design-icons";
+@import 'material-icons/iconfont/material-icons.scss';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
