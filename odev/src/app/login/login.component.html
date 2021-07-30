@@ -1,0 +1,52 @@
+<div class="login" class="row align-items-center h-100">
+  <div class="col-12 mx-auto">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Admin Giriş</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-tab-group>
+            <mat-tab label="Giriş Yap">
+              <mat-form-field class="example-full-width">
+                <mat-label>Kullanıcı Adı</mat-label>
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Kullanıcı Adınız"
+                  #userName="ngModel"
+                  [(ngModel)]="model.userName"
+                  id="userName"
+                  name="userName"
+                  required
+                  autofocus
+                />
+                <mat-icon>perm</mat-icon>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Şifre</mat-label>
+                <input
+                  type="password"
+                  matInput
+                  placeholder="Şifreniz"
+                  #password="ngModel"
+                  [(ngModel)]="model.password"
+                  id="password"
+                  name="password"
+                  required
+                />
+                <mat-icon matSuffix>vpn_key</mat-icon>
+              </mat-form-field>
+            </mat-tab>
+          </mat-tab-group>
+        </mat-card-content>
+
+        <div class="login__acitonbtn">
+          <button mat-button color="primary" class="loginbtn mb-2">
+            Giriş Yap
+          </button>
+        </div>
+      </mat-card>
+    </form>
+  </div>
+</div>
