@@ -1,0 +1,105 @@
+@import "../../sass/abstracts/responsive";
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/utilities/utilities";
+
+.navBar{
+  .navbar{
+    display: flex;
+    overflow: hidden;
+    width:100%;
+    height: 2.8rem;;
+
+    .nav-link{
+        color:$orange;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: $PrimaryFont;
+        &:hover{
+          color:$darkgrey;
+            background-color: $lightOrange;
+              }
+          }
+          .nav-right{
+            .btn{
+              margin-left:7px;
+              font-weight: 500;
+              outline: none;
+              border:none;
+              color:$black;
+              border-radius: 10px;
+            }
+          }
+  }
+    @include flexCenter;
+    width:100%;
+    background-color: $orange;
+    height: 5rem;
+    transition: all 0.5s linear;
+    box-shadow:0 0.5rem 2rem 0.2rem rgba(0,0,0,0.1);
+    background-color: $white;
+    &__container{
+        width:100%;
+        height: 7rem;
+        @include flexSpaceBetween;
+            @include md {
+                width:90%;
+              }
+              @include sm {
+                width:80%;
+              }
+    }
+
+    &__left{
+        &--logo{
+            font-family: $SecondaryFont;
+            font-size:1.6rem;
+            color:$orange;
+            span{
+                color:$grey2;
+            }
+            &:hover{
+               color:$black5;
+               transition: $transition;
+            }
+        }
+    }
+    &__right{
+
+        &--basket{
+            position:relative;
+            .mat-icon{
+                color:$orange;
+                font-size:2.3rem;
+            }
+            .cart-count{
+                display:flex;
+                @include flexCenter;
+                position:absolute;
+                right:-1.9rem;
+                top:-0.7rem;
+                width:2.1rem;
+                height:2.1rem;
+                background:$lightOrange;
+                border-radius:50%;
+                color:$black;
+                font-size:1.5rem;
+            }
+
+
+        }
+
+    }
+
+}
+.loginbtn{
+  background:$orange;
+
+}
+.mat-raised-button{
+  color:$white;
+  font-size:1.2rem;
+}

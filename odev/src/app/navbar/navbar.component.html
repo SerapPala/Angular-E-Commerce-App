@@ -1,0 +1,45 @@
+
+<div class="navBar">
+  <div class="container">
+      <div class="navBar__container d-flex">
+              <div class="navBar__left">
+                  <a class="navBar__left--logo" routerLink="/"><strong >B</strong><span>eyaz Kitap</span></a>
+              </div>
+              <nav class="navbar navbar-expand-lg justify-content-center d-flex flex-end " >
+                <div class="row ">
+                  <div class="col-lg-12">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" routerLink="/">ANASAYFA</a>
+                        </li>
+                        <li class="nav-item" >
+                          <a class="nav-link" routerLink="/urunler">ÜRÜNLER</a>
+                        </li>
+                        <li class="nav-item" >
+                          <a class="nav-link" routerLink="/hakkimizda">HAKKIMIZDA</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+              <div class="navBar__right d-flex">
+                  <div className="navBar__right--basket">
+                  <app-summary></app-summary>
+                </div>
+                  <form class="d-flex nav-right">
+                    <button class="btn loginbtn" type="submit" mat-raised-button><mat-icon>account_circle</mat-icon><a *ngIf="isLoggedin()==false" class="text-muted" routerLink="/login"> Giriş Yap</a>
+                      <a *ngIf="isLoggedin()==true" (click)="logOut()" class="text-muted">Çıkıs Yap</a>
+                    </button>
+                  </form>
+              </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
