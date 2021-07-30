@@ -1,0 +1,47 @@
+<div class="row my-5">
+  <div class="col-md-12 text-center">
+    <h3 class="mt-2 ">Yeni Ürün Ekle - Reactive Form</h3>
+    <form [formGroup]="productAddForm" (ngSubmit)="add()">
+        <div class="form-group mt-2">
+            <input type="text" id="productName" name="productName" formControlName="productName" class="form-control" placeholder="Ürün Adı">
+
+        </div>
+
+        <div class="form-group mt-2">
+            <input type="text" id="productAuthor" name="productAuthor" formControlName="productAuthor" class="form-control" placeholder="Yazar Adı">
+
+        </div>
+
+        <div class="form-group mt-2">
+            <input type="text" id="imageUrl" name="imageUrl" formControlName="imageUrl" class="form-control" placeholder="Fotoğraf Yolu">
+
+        </div>
+
+        <div class="form-group mt-2">
+            <input type="text" id="productPrice" name="productPrice" formControlName="productPrice" class="form-control" placeholder="Ürün Fiyatı">
+
+        </div>
+
+        <div class="form-group mt-2">
+          <select class="form-control"
+            formControlName="categoryId"
+            id="categoryId"
+            name="categoryId"
+            required
+          >
+            <option
+              *ngFor="let category of categories"
+              [value]="category.id"
+            >
+          {{category.categoryName}}
+          </option>
+          </select>
+
+        </div>
+
+      <button type="submit" class="btn btn-primary mt-2" [disabled]= "productAddForm.invalid">Ürün Ekle</button>
+    </form>
+  </div>
+</div>
+
+

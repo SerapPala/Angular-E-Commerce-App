@@ -1,0 +1,73 @@
+.mat-form-field{
+  width: 600px;
+}
+::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: slategray;
+    }
+    .mat-form-field-label {
+        color: slategray;
+    }
+    .mat-form-field-underline {
+        background-color: slategray;
+    }
+    .mat-form-field-ripple {
+        background-color: slategray;
+    }
+    .mat-form-field-required-marker {
+        color: slategray;
+    }
+}
+::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: slategray;
+        font-size:large
+    }
+    .mat-form-field-label {
+        color: rgb(107, 175, 243);
+    }
+    .mat-form-field-underline {
+        background-color: rgb(58, 156, 255);
+    }
+    .mat-form-field-ripple {
+        background-color: slategray;
+    }
+    .mat-form-field-required-marker {
+        color: slategray;
+    }
+}
+
+
+::ng-deep .mat-form-field.mat-focused {
+    .mat-form-field-label {
+        color: #323333;
+        font-size:1.3rem;
+    }
+    .mat-form-field-ripple {
+        background-color: #323333;
+        font-size:1.3rem;
+    }
+    .mat-form-field-required-marker {
+        color: #323333;
+        font-size:1.3rem;
+    }
+    .mat-input-element {
+        color: #323333;
+        font-size:1.3rem;
+    }
+}
+
+::ng-deep .mat-form-field.mat-form-field-invalid {
+  .mat-input-element {
+      color: #dbbe6d;
+  }
+  .mat-form-field-label {
+      color: #dbbe6d;
+      .mat-form-field-required-marker {
+          color: #dbbe6d;
+      }
+  }
+  .mat-form-field-ripple {
+      background-color: #dbbe6d;
+  }
+}
