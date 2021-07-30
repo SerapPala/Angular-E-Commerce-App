@@ -1,0 +1,68 @@
+@import "../../sass/abstracts/responsive";
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/utilities/utilities";
+
+#topbar {
+    background:$darkgrey;
+    font-size: 15px;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: inset 0 0 1px rgb(212, 212, 212);
+    width:100%;
+    height: 1.6rem;
+    .social-links{
+            a {
+                    color: $orange;
+                    padding: 4px 12px;
+                    display: inline-block;
+                    line-height: 1px;
+                    transition: $transition;
+                    cursor:pointer;
+                }
+            &--link{
+                span{
+                    margin-left:10px;
+                    color:$orange;
+                    cursor:pointer;
+                    &:hover{
+                        transition: $transition;
+                        color: $lightOrange;
+                    }
+                }
+            }
+        }
+    }
+
+#topbar .contact-info{
+  color: $orange;
+  cursor:pointer;
+  a {
+    line-height: 1;
+    color: $orange;
+
+     &:hover {
+      transition: $transition;
+      color: $lightOrange;
+      }
+  }
+  .mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    font-size:18px;
+    color:$orange;
+    &:hover {
+      transition: $transition;
+      color: $lightOrange;
+      }
+    }
+}
+#topbar .social-links a:hover {
+    color: $lightOrange;
+}
+#topbar .social-links a:first-child {
+    border-left: 0;
+}
