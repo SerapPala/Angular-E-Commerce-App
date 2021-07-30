@@ -1,0 +1,238 @@
+{
+  "products": [
+    {
+      "productName": "Kırık Kanatlar ",
+      "productAuthor": "Halil Cibran",
+      "imageUrl": "https://img.iskultur.com.tr/2021/07/Kirik-Kanatlar-Sert-Kapak.png",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "id": 10
+    },
+    {
+      "productName": "Sarı Odanın Esrarı ",
+      "imageUrl": "https://img.iskultur.com.tr/2021/07/Sari-Odanin-Esrari-Sert-Kapak.png",
+      "productAuthor": "Gaston Leroux",
+      "productPrice": 28,
+      "categoryId": "1",
+      "id": 11
+    },
+    {
+      "imageUrl": "https://img.iskultur.com.tr/2021/07/Buyulu-Insan.png",
+      "productName": "Büyülü Nisan",
+      "productAuthor": "Elizabeth Von Arnim",
+      "productPrice": 12.6,
+      "categoryId": "1",
+      "id": 12
+    },
+    {
+      "productName": "Hakka Sığındık",
+      "productAuthor": "Hüseyin Rahmi Gürpınar",
+      "imageUrl": "https://img.iskultur.com.tr/2021/06/hakka-sigindik.png",
+      "productPrice": 8.4,
+      "categoryId": "2",
+      "id": 13
+    },
+    {
+      "productAuthor": "Saffet Nezihi",
+      "productName": "Zavallı Necdet",
+      "imageUrl": "https://img.iskultur.com.tr/2021/04/Zavalli-Necdet.png",
+      "productPrice": 9.8,
+      "categoryId": "2",
+      "id": 16
+    },
+    {
+      "productAuthor": "Raymond Tallis",
+      "productName": "Sonsuz Uzayın Hâkimi",
+      "productPrice": 22.4,
+      "categoryId": "3",
+      "imageUrl": "",
+      "id": 17
+    },
+    {
+      "productName": "Büyük Mühendisler",
+      "productAuthor": "Ioan James",
+      "imageUrl": "",
+      "productPrice": 21,
+      "categoryId": "3",
+      "id": 18
+    },
+    {
+      "productName": "Büyük Matematikçiler",
+      "productAuthor": "Ioan James",
+      "productPrice": 25,
+      "categoryId": "3",
+      "imageUrl": "",
+      "id": 19
+    },
+    {
+      "productName": "Devlet-i ‘Aliyye",
+      "productAuthor": "Halil İnalcık",
+      "productPrice": 31.5,
+      "categoryId": "4",
+      "imageUrl": "",
+      "id": 20
+    },
+    {
+      "productAuthor": "Feroz Ahmad",
+      "productName": "Jön Türkler",
+      "imageUrl": "",
+      "productPrice": 19.6,
+      "categoryId": "4",
+      "id": 21
+    },
+    {
+      "productName": "Atatürk – Kurucu Felsefenin Evrimi",
+      "productAuthor": "Zafer Toprak",
+      "imageUrl": "",
+      "productPrice": 23.8,
+      "categoryId": "4",
+      "id": 22
+    },
+    {
+      "productName": "Homeros – Gül ile Söyleşi",
+      "productAuthor": "Azra Erhat",
+      "imageUrl": "",
+      "productPrice": 12.5,
+      "categoryId": "6",
+      "id": 23
+    },
+    {
+      "productName": "Perikles",
+      "productAuthor": "Thomas R. Martin",
+      "imageUrl": "",
+      "productPrice": 52.5,
+      "categoryId": "5",
+      "id": 24
+    },
+    {
+      "productName": "Mozart",
+      "productAuthor": "Maynard Solomon",
+      "imageUrl": "",
+      "productPrice": 56,
+      "categoryId": "5",
+      "id": 26
+    },
+    {
+      "productName": "Milli Mücadele Hatıralarım",
+      "productAuthor": " Fazıl Doğan",
+      "imageUrl": "",
+      "productPrice": 9.1,
+      "categoryId": "6",
+      "id": 27
+    },
+    {
+      "productName": "Kubilay Han",
+      "productAuthor": "Morris Rossabi",
+      "productPrice": 42,
+      "categoryId": "5",
+      "imageUrl": "",
+      "id": 28
+    },
+    {
+      "productName": "En Hakiki Mürşit Gülleylâ’ya Anılar",
+      "productAuthor": "Azra Erhat",
+      "imageUrl": "",
+      "productPrice": 12.6,
+      "categoryId": "6",
+      "id": 29
+    },
+    {
+      "productName": "Eylül ",
+      "productAuthor": "Mehmet Rauf",
+      "productPrice": 24,
+      "categoryId": "2",
+      "imageUrl": "",
+      "id": 30
+    },
+    {
+      "productName": "Ateş Yakmak",
+      "productAuthor": "Jack London",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "imageUrl": "",
+      "id": 31
+    },
+    {
+      "productName": "Muhteşem Gatsby ",
+      "imageUrl": "",
+      "productAuthor": "Francis Scott Fitzgerald",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "id": 32
+    },
+    {
+      "productName": "Zacharius Usta",
+      "productAuthor": " Jules Verne",
+      "imageUrl": "",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "id": 35
+    },
+    {
+      "productAuthor": " Halil Cibran",
+      "productName": "Kum ve Köpük",
+      "imageUrl": "",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "id": 36
+    },
+    {
+      "imageUrl": "",
+      "productAuthor": " William Golding",
+      "productName": "Sineklerin Tanrısı ",
+      "productPrice": 28,
+      "categoryId": "1",
+      "id": 37
+    },
+    {
+      "productName": "test reactive",
+      "productAuthor": "Sait Faik Abasıyanık",
+      "imageUrl": "",
+      "productPrice": 24.5,
+      "categoryId": "1",
+      "id": 38
+    },
+    {
+      "productName": "Sineklerin Tanrısı ",
+      "productAuthor": "Sait Faik Abasıyanık",
+      "imageUrl": "",
+      "productPrice": "10",
+      "categoryId": 2,
+      "id": 39
+    },
+    {
+      "productName": "urun",
+      "productAuthor": "test author",
+      "imageUrl": "",
+      "productPrice": "10",
+      "categoryId": 1,
+      "id": 40
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Modern Dünya Klasikleri"
+    },
+    {
+      "id": 2,
+      "categoryName": "Modern Türk Klasikleri"
+    },
+    {
+      "id": 3,
+      "categoryName": "Bilim"
+    },
+    {
+      "id": 4,
+      "categoryName": "Tarih"
+    },
+    {
+      "id": 5,
+      "categoryName": "Biyografi"
+    },
+    {
+      "id": 6,
+      "categoryName": "Anı"
+    }
+  ]
+}
