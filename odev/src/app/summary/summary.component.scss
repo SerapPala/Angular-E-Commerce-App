@@ -1,0 +1,46 @@
+@import "../../sass/abstracts/responsive";
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/utilities/utilities";
+.nav-link{
+        margin-left: 50px;
+        margin-top:4px;
+        color:$light;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-family: $PrimaryFont;
+        &:hover{
+            background-color: $lightgreen;
+        }
+        span{
+          color:$orange;
+          font-size:400;
+        }
+}
+
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.dropdown-item{
+  font-weight: 400;
+  font-style: italic;
+  margin:4px;
+}
+.btn{
+  background-color: $orange;
+  margin-right: 1rem;
+  color:$white;
+  &:focus{
+
+  }
+  &:hover{
+    background-color: $lightOrange;
+    color:$black;
+  }
+}
+.mat-icon{
+  padding-top: 4px;
+  color:$blue;
+}

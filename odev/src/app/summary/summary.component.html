@@ -1,0 +1,12 @@
+<div class="col" *ngIf="cartItems.length>0">
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline" id="dropdownBasic1" ngbDropdownToggle><mat-icon>add_shopping_cart</mat-icon></button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <li *ngFor="let cartItem of cartItems"><a
+        class="dropdown-item">
+        <span class="badge bg-info">{{cartItem.quantity}}</span>{{cartItem.product.productName}}<span (click)="removeFromCart(cartItem.product)" class="badge bg-danger">Sil</span></a></li>
+      <button ngbDropdownItem routerLink="/sepet">Sepete Git</button>
+    </div>
+  </div>
+</div>
+
