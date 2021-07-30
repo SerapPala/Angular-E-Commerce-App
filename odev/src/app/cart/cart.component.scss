@@ -1,0 +1,75 @@
+@import "../../sass/abstracts/responsive";
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+@import "../../sass/utilities/utilities";
+.cart{
+  margin-top:0.7rem;
+  list-style: none;
+  .container{
+      h3{
+        font-size:1.5rem;
+      }
+        .cart__heading{
+          color:$white;
+          background: #bbbdc0;
+          padding:1rem;
+          font-size:1.3rem;
+          font-weight: 400;
+          font-family: $PrimaryFont;
+        }
+      .row{
+          @include VerticalAlign;
+          .col-3{
+            list-style: none;
+            font-size:1.1rem;
+            font-weight:400;
+            color:$grey2;
+        }
+              .cart__remove{
+                  font-size:1.3rem;
+              }
+          }
+          .summary{
+              padding-left: 1rem;
+              margin-bottom:2rem;
+              font-size:1.2rem;
+              &__heading{
+                  background: #bbbdc0;
+                  padding: 1rem;
+                  color:$white;
+              }
+              &__details{
+                  background: $PrimaryColor;
+                  color: $grey2;
+                  padding: 1.1rem;
+
+                  &--checkout{
+                    margin-top:1rem;
+                      border-color: $black;
+                      cursor: pointer;
+                      outline: none;
+                      background: $white;
+                      color: $grey2 ;
+                      width: 100%;
+                      padding: 0.8rem 0.5rem;
+                      font-weight: 500;
+                      font-size: 1.2rem;
+                      text-transform: uppercase;
+                      border-radius: 10px;
+                      &:hover{
+                        background-color: $black ;
+                        color:$white;
+                        transition: $transition;
+                      }
+                  }
+              }
+          }
+      }
+      .details{
+        &__info{
+          cursor:pointer;
+      }
+  }
+}
+
+

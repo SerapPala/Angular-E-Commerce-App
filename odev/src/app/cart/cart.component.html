@@ -1,0 +1,99 @@
+<div class="cart">
+  <div class="container">
+    <h3 class="text-muted">Sepetinde bulunan ürünler</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="cart__heading">
+          <div class="row">
+            <div class="col-sm-4 text-white">Ürün Adı</div>
+            <div class="col-sm-2  text-white">Ürün Fiyatı</div>
+            <div class="col-sm-2  text-white"> Ürün Adedi</div>
+            <div class="col-sm-2  text-white">Ekle/Azalt</div>
+            <div class="col-sm-2  text-white">Sil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-4  mt-2">
+        <div class="cart__name">
+          <li *ngFor="let cartItem of cartItems" class="border-bottom mt-3">
+            <a class=""> {{ cartItem.product.productName }}</a>
+          </li>
+        </div>
+      </div>
+      <div class="col-sm-2  mt-2">
+        <span class="details__info__k--quantity">
+          <li *ngFor="let cartItem of cartItems" class="mt-3">
+            <a class="">
+              <span class="badge bg-info p-2">{{ cartItem.quantity*cartItem.product.productPrice | currency: "TRY":"TL":""  }}</span></a>
+          </li>
+        </span>
+      </div>
+      <div class="col-sm-2  mt-2">
+        <span class="details__info__k--quantity">
+          <li *ngFor="let cartItem of cartItems" class="mt-3">
+            <a class="">
+              <span class="badge bg-info p-2">{{ cartItem.quantity }}</span></a>
+          </li>
+        </span>
+      </div>
+      <div class="col-sm-2  mt-2 details text-center">
+        <div class="details__info">
+          <div class="details__info__k d-flex">
+            <span class="details__info__k--inc">
+              <li *ngFor="let cartItem of cartItems" class="mt-3">
+                <a class="">
+                  <span
+                    (click)="addToCart(cartItem.product)"
+                    class="badge bg-success"
+                    ><mat-icon>add_circle_outline</mat-icon> </span></a>
+              </li>
+            </span>
+            <span class="details__info__k--dec">
+              <li *ngFor="let cartItem of cartItems" class="mt-3">
+                <a class="m-3 mr-4 ml-6">
+                  <span
+                    (click)="decreaseCart(cartItem.product)"
+                    class="badge bg-warning"
+                    > <mat-icon>indeterminate_check_box</mat-icon></span></a>
+              </li>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2  mt-2">
+        <span class="details__info__k--delete">
+        <li *ngFor="let cartItem of cartItems" class="mt-3">
+          <a class="">
+            <span
+              (click)="removeFromCart(cartItem.product)"
+              class="badge bg-danger"
+              ><mat-icon>delete_outline</mat-icon></span></a>
+        </li>
+      </span>
+      </div>
+    </div>
+    <div class="row justify-content-end ">
+      <div class="col-sm-5 mt-4">
+        <div class="summary">
+          <div class="summary__heading">Özet</div>
+          <div class="summary__details">
+            <div class="row mb-1">
+              <div class="col-6">Toplam Ürün:</div>
+              <div class="col-6">toplam ürün adedi alanı</div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-6">Toplam Fiyat</div>
+          <!--     <div class="col-6">{{cartTotal}}</div> -->toplam ürün adedi
+            </div>
+            <button type="button" class="summary__details--checkout">
+              <mat-icon>check_circle_outline</mat-icon> Ödeme yap
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
